@@ -1,0 +1,10 @@
+[mysqld]
+server-id=1                      
+log-bin=mysql-bin                 
+binlog-format=row                
+rpl_semi_sync_master_enabled=1   
+plugin-load-add=rpl_semi_sync_master=semisync_master.so
+
+ssl-ca=/ruta/a/ca-cert.pem
+ssl-cert=/ruta/a/server-cert.pem
+ssl-key=/ruta/a/server-key.pem

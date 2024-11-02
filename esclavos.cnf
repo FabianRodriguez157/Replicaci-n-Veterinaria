@@ -1,0 +1,9 @@
+[mysqld]
+server-id=2                      
+relay-log=relay-bin              
+rpl_semi_sync_slave_enabled=1    
+plugin-load-add=rpl_semi_sync_slave=semisync_slave.so
+
+ssl-ca=/ruta/a/ca-cert.pem
+ssl-cert=/ruta/a/server-cert.pem
+ssl-key=/ruta/a/server-key.pem
